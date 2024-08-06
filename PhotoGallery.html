@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo Gallery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./gallery.css">
+    </head>
+    <body>
+        <section class="Banner">
+            <nav>
+                <div class ="logo">
+                    <a href="index.html"><img src="./logo.png" width="100"></a>
+                </div>
+                <div class="nav-links">
+
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./AboutUs.html">About Us</a></li>
+                        <li><a href="OurWork.html">Our Work</a></li>
+                        <li><a href="PhotoGallery.html">Photo Gallery</a></li>
+                        <li><a href="GetInvolved.html">Get Involved</a></li>
+                        <li><a href="ContactUs.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="imgGallery">
+                <h1>Photo Gallery</h1>
+                <div class="imgContainer">
+                    <div class="image"> <img src="./pic 1.jpg" alt="Forrest cleanup" title="School Cleanup" onclick="openFullImg(this.src)"></div>
+                    <div class="image"><img src="./pic 2.jpg" alt="Forrest cleanup" title="Recycle" onclick="openFullImg(this.src)"></div>
+                    <div class="image"><img src="./pic 3.jpg" alt="Forrest cleanup" title="Forrest cleanup" onclick="openFullImg(this.src)"></div>
+                    <div class="image"><img src="./pic 4.jpg" alt="Forrest cleanup" title="Children cleaning" onclick="openFullImg(this.src)"></div>
+                    <div class="image"><img src="./pic 5.jpg" alt="Forrest cleanup" title="Uniform cleanup" onclick="openFullImg(this.src)"></div>
+                    <div class="image"><img src="./pic 8.jpg" alt="Forrest cleanup" title="Cleaning crew" onclick="openFullImg(this.src)"></div>
+                </div>
+
+            </div>
+            <div class="popup" id="fullImgBox">
+            
+                <span onclick="closepopup()">x</span>
+            </div>
+            <script>
+                var fullImgBox = document.getElementById("fullImgBox");
+                var popup = document.getElementById("popup");
+            
+                function openpopup(pic) {
+                    fullImgBox.style.display = "none";
+                    popup.src = pic;
+                }
+                function closepopup() {
+                    fullImgBox.style.display = "none";
+                }
+            </script>
+
+            <section class="footer">
+                <h4>Contact Us</h4>
+                <p>
+                    Check us out on Instagram: @City Cleaners<br>
+                    Email: CityCleaners@gmail.com<br>
+                    TELL: +27 412 9453
+
+                </p>
+
+            </section>
+
+    </body>
+</html>

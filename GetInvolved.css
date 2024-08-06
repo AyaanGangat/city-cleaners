@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.GetBanner{
+    height: 90%;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./AboutBanner.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+.GetBanner h1{
+    margin-top: 100px;
+}
+nav{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav a{
+    display: inline;
+    min-height: 50px;
+
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    text-align: left;
+    display: inline-block;
+    width: 100%
+}
+.nav-links ul{
+    margin-left: 40%;
+    display: inline-block;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size:20px;
+}
+.nav-links ul li a:hover{
+    background: #008000;
+    transition: 0.5s; 
+}
+.footer{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: cadetblue;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+
+}
+a.VisitUs{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    background: transparent;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer; 
+}
+a.VisitUs:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.5s;
+}
+@media (max-width: 680px) {
+    .nav-links ul li a{
+
+        font-size: 15px;
+    }
+    nav ul{
+        margin: 0 !important;
+    }
+}
+form{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    align-content: center;
+}
+.form{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+} 
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+    
+}
+form button{
+    padding: 15px;
+    background: #ff5361;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+
+

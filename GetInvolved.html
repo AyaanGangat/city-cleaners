@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Get Involved</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./GetInvolved.css">
+    </head>
+    <body>
+        <section class="GetBanner">
+
+            <nav>
+                <div class ="logo">
+                    <a href="index.html"><img src="./logo.png" width="100"></a>
+                </div>
+                <div class="nav-links">
+
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./AboutUs.html">About Us</a></li>
+                        <li><a href="OurWork.html">Our Work</a></li>
+                        <li><a href="PhotoGallery.html">Photo Gallery</a></li>
+                        <li><a href="GetInvolved.html">Get Involved</a></li>
+                        <li><a href="ContactUs.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="form">
+                <form onsubmit = "sendEmail(); reset(); return false;">
+                    <h1>
+                        Get Involved
+                    </h1>
+                    <h3>
+                        Fill out the following form to get involved with City Cleaners:
+                    </h3>
+
+                    <input type="text" id="name" placeholder="Name & Surname" required>
+                    <input type="email" id="email" placeholder="Email address" required>
+                    <input type="text" id="phone" placeholder="Contact Info" required>
+                    <textarea id="message" rows="4" placeholder="Enquire:"></textarea>
+                    <button type="submit" >Send</button>
+                </form>
+            </div>
+
+
+            <section class="footer">
+                <h4>Contact Us</h4>
+                <p>
+                    Check us out on Instagram: @City Cleaners<br>
+                    Email: CityCleaners@gmail.com<br>
+                    TELL: +27 412 9453
+
+                </p>
+            </section>
+            <script src=" https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+                function sendEmail() {
+                    Email.send({
+                        Host: "smtp.gmail.com",
+                        Username: "faizagangat3@gmail.com",
+                        Password: "zahiragangat",
+                        To: 'ayaangangat9@gmail.com',
+                        From: document.getElementbyId("email").value,
+                        Subject: "New contact form Enquiry",
+                        Body: "And this is the body"
+                    }).then(
+                            message => alert(message)
+                    );
+                }
+            </script>
+    </body>
+</html>

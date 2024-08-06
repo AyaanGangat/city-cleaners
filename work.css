@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Banner{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./HomeBanner.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav a{
+    display: inline;
+    min-height: 50px;
+
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    text-align: left;
+    display: inline-block;
+    width: 100%
+}
+.nav-links ul{
+    margin-left: 40%;
+    display: inline-block;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size:20px;
+}
+.nav-links ul li a:hover{
+    background: #008000;
+    transition: 0.5s; 
+}
+.footer{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: cadetblue;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+
+}
+.Mid P {
+    color: #fff;
+    text-align: center;
+}
+.Mid h1{
+    color: #fff;
+    text-align: center;
+}
+@media (max-width: 680px) {
+    .nav-links ul li a{
+
+        font-size: 15px;
+    }
+    nav ul{
+        margin: 0 !important;
+    }
+}
